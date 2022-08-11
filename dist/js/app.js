@@ -10,10 +10,22 @@ var app = {
     },
     Ui:{
         Boot:function(){
-            app.Ui.toggleEditModal();
+            app.Ui.toggleNewPasswordModal();
         },
-        toggleEditModal:function(){
-            console.log('modal toggle active');
+        toggleNewPasswordModal:function(){
+           $('#addNewLink').click(function (e) { 
+                // show the modal window
+                $('#newPasswordModal').toggleClass('hidden');
+                // focus the first input field
+                $('#newWebsiteAddressInput').focus();
+           });
+           $('#pwModalBg').click(function (e) { 
+                // Hide the modal window
+
+                // reset the form fields
+                $('#newWebsiteAddressInput').val('');
+                $('#newWebsitePasswordInput').val('');
+           });
         }
     }
 }

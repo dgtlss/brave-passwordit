@@ -6,3 +6,42 @@
     background-color: rgba(255, 255, 255, .15);  
     backdrop-filter: blur(5px);
 }
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,25px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,25px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 500ms;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 500ms;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}

@@ -1,15 +1,13 @@
 <?php
 
-// check if the user is logged in
-if(isset($_SESSION['user_id'])){
-    header('Location: /auth/login.php');
-}
-
 Class userPasswords{
 
     public function __construct()
     {
-
+        // check if the user is logged in
+        if(isset($_SESSION['user_id'])){
+            header('Location: /auth/login.php');
+        }
     }
 
     public function saveNewPassword($websiteUrl, $websiteName, $websitePassword, $websiteUsername)
