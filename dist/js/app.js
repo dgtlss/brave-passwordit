@@ -1,7 +1,7 @@
 var app = {
     Boot:function(){
-        app.Form.Boot();
-        app.Ui.Boot();
+        app.Form.Boot(); // boot all form functions
+        app.Ui.Boot(); // boot all Ui functions
     },
     Form:{
         Boot:function(){
