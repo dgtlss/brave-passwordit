@@ -1,6 +1,20 @@
 var app = {
     Boot:function(){
-        console.log('Password Manager Booted!');
+        app.Form.Boot();
+        app.Ui.Boot();
+    },
+    Form:{
+        Boot:function(){
+
+        }
+    },
+    Ui:{
+        Boot:function(){
+            app.Ui.toggleEditModal();
+        },
+        toggleEditModal:function(){
+            console.log('modal toggle active');
+        }
     }
 }
 
