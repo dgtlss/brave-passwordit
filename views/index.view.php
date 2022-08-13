@@ -37,6 +37,13 @@
                 </div>
             </div>
         </div>
+        <div class="w-full mt-4">
+            <?php
+                foreach($userPasswords as $pw){
+                    
+                }
+            ?>
+        </div>
     </div>
     <?= require "modals/add-new-link.view.php" ?>
     <script src="/dist/js/jquery.min.js"></script>

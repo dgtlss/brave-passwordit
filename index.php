@@ -1,6 +1,9 @@
 <?php
 
+
 Class userPasswords{
+
+    public $userPasswords;
 
     public function __construct()
     {

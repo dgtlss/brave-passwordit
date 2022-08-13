@@ -10,6 +10,7 @@
                 <path fill-rule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clip-rule="evenodd" />
             </svg>
         </div>
+        <form action="/savepassword.php" type="submit">
         <div class="mt-3 text-center sm:mt-5">
           <h3 class="text-lg leading-6 font-medium text-gray-900" id="modal-title">Add a new password</h3>
           <div class="w-full mt-4">
@@ -24,11 +25,12 @@
         </div>
       </div>
       <div class="mt-5 sm:mt-6">
-        <button type="button" 
+        <button type="submit" 
         class="inline-flex justify-center w-full rounded-md border border-transparent shadow-sm px-4 py-2 bg-indigo-600 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:text-sm">
             Save
         </button>
       </div>
+      </form>
     </div>
   </div>
 </div>
